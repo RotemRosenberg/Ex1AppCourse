@@ -1,5 +1,5 @@
 class Counter {
-  constructor(count) {
+  constructor() {
   this.count=0;
   }
 
@@ -21,10 +21,10 @@ class Counter {
 let counter = new Counter();
 
 function startCounter() {
-  let inputValue = document.getElementById('numInput').value;
-  if (inputValue) {
-      counter.initialize(parseInt(inputValue));
-      document.getElementById('numInput').value = inputValue;
+  let inputCount = document.getElementById('numInput').value;
+  if (inputCount) {
+      counter.initialize(parseInt(inputCount));
+      document.getElementById('numInput').value = inputCount;
       console.log(counter)
    } 
    else  {

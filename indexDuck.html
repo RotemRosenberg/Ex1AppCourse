@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Duck Page
+  </title>
+  <link rel="stylesheet" href="duck.css">
+</head>
+
+<body>
+  <div id="duck-box">
+    <h1>Ex1 Duck Class</h1>
+    <div id="form-container">
+      <form id="duckForm">
+        <label for="fname">Name:</label>
+        <input type="text" id="fname" name="fname" required>
+
+        <label for="fcolor">Color:</label>
+        <input type="text" id="fcolor" name="fcolor" required>
+
+        <label for="fage">Age:</label>
+        <input type="number" id="fage" name="fage" min="0" required> 
+
+        <label for="fweight">Weight:</label>
+        <input type="number" id="fweight" name="fweight" min="0" required>
+
+        <label for="fimage">Image:</label>
+        <input type="text" id="fimage" name="fimage" required>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    <div id="duckBtn" style="display: none;">
+      <h2 id="duckTitle"></h2>
+      <button onclick="showDuck()">Show</button>
+      <button onclick="quackDuck()">Quack</button>
+      <div id="duckInfo"></div>  
+    </div>
+  </div>
+  <script src="duck.js"></script>
+</body>
+
+</html>
