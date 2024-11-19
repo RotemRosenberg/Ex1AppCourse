@@ -42,7 +42,11 @@ document.getElementById("clockForm").addEventListener("submit", function (e) {
 });
 
 function displayClocks() {
-  document.getElementById('submitButton').disabled="true";
+  //button change
+  const submitButton = document.getElementById('submitButton');
+  submitButton.disabled = true;
+  submitButton.style.cursor = "not-allowed";
+//display clocks info
   const displayDiv = document.getElementById("clockInfo");
   displayDiv.innerHTML = ""; 
 
