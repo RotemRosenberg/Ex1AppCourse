@@ -8,7 +8,7 @@ class Duck {
   }
 
   Quack() {
-    const audioPath = "quacksound.wav";
+    const audioPath = "/Duck/quacksound.wav";
     const playCount = 3; // מספר הפעמים שהסאונד יתנגן
     const delayBetweenPlays = 500; // הפרש הזמן בין השמעה להשמעה במילישניות
 
